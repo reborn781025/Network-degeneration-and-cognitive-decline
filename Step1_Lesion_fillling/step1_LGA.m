@@ -1,5 +1,5 @@
 % This script uses the Lesion Segmentation Tool (LST) (Schmidt et al., Neuroimage, 2012) for Statistical Parametric Mapping (SPM12; Wellcome Trust Centre for
-Neuroimaging). Please have LST and SPM12 install first
+% Neuroimaging). Please have LST and SPM12 install first
 
 addpath(genpath(SPM12)) % modify the path according to your own use
 

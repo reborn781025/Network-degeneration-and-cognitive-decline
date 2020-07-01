@@ -9,11 +9,11 @@ list_file = 'list.txt'; % put your subject list here
 list = importdata(list_file);
 
 for i = 1:length(list)
-  matlabbatch{1}.spm.tools.LST.lga.data_T1 = {['list{i} '/oT1.nii,1']}; % indicate where all T1 images are
-	matlabbatch{1}.spm.tools.LST.lga.data_F2 = {['list{i} '/oFlair.nii,1']}; % indicate where all FLAIR images are
-	matlabbatch{1}.spm.tools.LST.lga.opts_lga.initial = 0.3;
-	matlabbatch{1}.spm.tools.LST.lga.opts_lga.mrf = 1;
-	matlabbatch{1}.spm.tools.LST.lga.opts_lga.maxiter = 50;
-	matlabbatch{1}.spm.tools.LST.lga.html_report = 1;
-	spm_jobman('run',matlabbatch);
+    matlabbatch{1}.spm.tools.LST.lga.data_T1 = {['list{i} '/oT1.nii,1']}; % indicate where all T1 images are
+    matlabbatch{1}.spm.tools.LST.lga.data_F2 = {['list{i} '/oFlair.nii,1']}; % indicate where all FLAIR images are
+    matlabbatch{1}.spm.tools.LST.lga.opts_lga.initial = 0.3;
+    matlabbatch{1}.spm.tools.LST.lga.opts_lga.mrf = 1;
+    matlabbatch{1}.spm.tools.LST.lga.opts_lga.maxiter = 50;
+    matlabbatch{1}.spm.tools.LST.lga.html_report = 1;
+    spm_jobman('run',matlabbatch);
 end

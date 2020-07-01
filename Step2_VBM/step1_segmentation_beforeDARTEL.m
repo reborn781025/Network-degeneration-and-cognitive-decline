@@ -1,4 +1,4 @@
-% This script uses ta computational anatomy toolbox (CAT12) for Statistical Parametric Mapping (SPM12; Wellcome Trust Centre for Neuroimaging). 
+% This script uses the computational anatomy toolbox (CAT12) for Statistical Parametric Mapping (SPM12; Wellcome Trust Centre for Neuroimaging). 
 % Please install Cat12 and SPM12 first
 
 addpath(genpath(SPM12)) % modify the path according to your own use

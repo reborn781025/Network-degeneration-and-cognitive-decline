@@ -1,0 +1,205 @@
+
+%------------------------------------------------------------------------
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  Result File Name Start  %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Note: Result file must be listed first, and must follow the file
+%	 name format of xxxx_yyyyresult.mat, where xxxx stands for
+%	 "any result file name prefix" and yyyy stands for the name
+%	 of PLS module (either PET ERP fMRI BfMRI STRUCT or SmallFC).
+%	 File name is case sensitive on Unix or Linux computers.
+
+result_file	Stroke_STRUCTresult_DAN_L_IPS.mat
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  Result File Name End  %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  Group Section Start  %
+	%%%%%%%%%%%%%%%%%%%%%%%%%
+
+group_files	Stroke_STRUCTsessiondata.mat 
+
+% ... following above pattern for more groups
+
+	%%%%%%%%%%%%%%%%%%%%%%%
+	%  Group Section End  %
+	%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+
+	%%%%%%%%%%%%%%%%%%%%%%%
+	%  PLS Section Start  %
+	%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Notes:
+%    1. Mean-Centering PLS
+%    2. Non-Rotated Task PLS (please also fill out contrast data below)
+%    3. Regular Behav PLS (please also fill out behavior data & name below)
+%    4. Multiblock PLS (please also fill out behavior data & name below)
+%    5. Non-Rotated Behav PLS (please also fill out contrast data and
+%	behavior data & name below)
+%    6. Non-Rotated Multiblock PLS (please also fill out contrast data and
+%	behavior data & name below)
+
+pls		3		% PLS Option (between 1 to 6, see above notes)
+
+%  Mean-Centering Type:
+%    0. Remove group condition means from conditon means within each group
+%    1. Remove grand condition means from each group condition mean
+%    2. Remove grand mean over all subjects and conditions
+%    3. Remove all main effects by subtracting condition and group means
+
+mean_type	0		% Mean-Centering Type (between 0 to 3, see above)
+
+%  Correlation Mode:
+%    0. Pearson correlation
+%    2. covaraince
+%    4. cosine angle
+%    6. dot product
+
+cormode		0		% Correlation Mode (can be 0,2,4,6, see above)
+
+num_perm	5000		% Number of Permutation
+num_split	0		% Natasha Perm Split Half
+num_boot	1000		% Number of Bootstrap
+boot_type	strat		% Either strat or nonstrat bootstrap type
+clim		95		% Confidence Level for Behavior PLS
+is_struct	1		% Set to 0 if not use segmented data
+save_data	0		% Set to 1 to save stacked datamat
+
+	%%%%%%%%%%%%%%%%%%%%%
+	%  PLS Section End  %
+	%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  Condition Selection Start  %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Notes: If you don't need to deselect conditions, just leave
+%  "selected_cond" and "selected_bcond" to be commented.
+
+%  First put k number of 1 after "selected_cond" keyword, where k is the
+%  number of conditions in sessiondata file. Then, replace with 0 for
+%  those conditions that you would like to deselect for any case except
+%  behavior block of multiblock PLS. e.g. If you have 3 conditions in
+%  sessiondata file, and you would like to deselect the 2nd condition,
+%  then you should enter 1 0 1 after selected_cond.
+%
+selected_cond	1 
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  Condition Selection End  %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  Behavior Data Start  %
+	%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Notes: only list selected conditions (selected_cond)
+
+behavior_data	0.303610000000000 
+behavior_data	0.235820000000000 
+behavior_data	0.224030000000000 
+behavior_data	0.223810000000000 
+behavior_data	0.322090000000000 
+behavior_data	0.276500000000000 
+behavior_data	0.336860000000000 
+behavior_data	0.341670000000000 
+behavior_data	0.300420000000000 
+behavior_data	0.297750000000000 
+behavior_data	0.356420000000000 
+behavior_data	0.378540000000000 
+behavior_data	0.285440000000000 
+behavior_data	0.266270000000000 
+behavior_data	0.305820000000000 
+behavior_data	0.253730000000000 
+behavior_data	0.291040000000000 
+behavior_data	0.320580000000000 
+behavior_data	0.272270000000000 
+behavior_data	0.183610000000000 
+behavior_data	0.346970000000000 
+behavior_data	0.307040000000000 
+behavior_data	0.282620000000000 
+behavior_data	0.228480000000000 
+behavior_data	0.242690000000000 
+behavior_data	0.262020000000000 
+behavior_data	0.305400000000000 
+behavior_data	0.239830000000000 
+behavior_data	0.455350000000000 
+behavior_data	0.340720000000000 
+behavior_data	0.216100000000000 
+behavior_data	0.251360000000000 
+behavior_data	0.282080000000000 
+behavior_data	0.278070000000000 
+behavior_data	0.282930000000000 
+behavior_data	0.266940000000000 
+behavior_data	0.247720000000000 
+behavior_data	0.278430000000000 
+behavior_data	0.357240000000000 
+behavior_data	0.194090000000000 
+behavior_data	0.176090000000000 
+behavior_data	0.328430000000000 
+behavior_data	0.328210000000000 
+behavior_data	0.240880000000000 
+behavior_data	0.309960000000000 
+behavior_data	0.415670000000000 
+behavior_data	0.285940000000000 
+behavior_data	0.213950000000000 
+behavior_data	0.349790000000000 
+behavior_data	0.321820000000000 
+behavior_data	0.240620000000000 
+behavior_data	0.317940000000000 
+behavior_data	0.322460000000000 
+behavior_data	0.271150000000000 
+behavior_data	0.272490000000000 
+behavior_data	0.278280000000000 
+behavior_data	0.294060000000000 
+behavior_data	0.300080000000000 
+behavior_data	0.328790000000000 
+behavior_data	0.295700000000000 
+behavior_data	0.316150000000000 
+behavior_data	0.317570000000000 
+behavior_data	0.321180000000000 
+behavior_data	0.291310000000000 
+behavior_data	0.307830000000000 
+behavior_data	0.187330000000000 
+behavior_data	0.370490000000000 
+behavior_data	0.342890000000000 
+behavior_data	0.283380000000000 
+behavior_data	0.360940000000000 
+behavior_data	0.336530000000000 
+behavior_data	0.268060000000000 
+behavior_data	0.259230000000000 
+
+% ... following above pattern for more groups
+
+	%%%%%%%%%%%%%%%%%%%%%%%
+	%  Behavior Data End  %
+	%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  Behavior Name Start  %
+	%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Numbers of Behavior Name should match the Behavior Data above
+
+behavior_name	DAN_L_IPS 
+
+	%%%%%%%%%%%%%%%%%%%%%%%
+	%  Behavior Name End  %
+	%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+

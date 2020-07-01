@@ -8,8 +8,8 @@ list = importdata(list_file);
 
 for i=1:length(list)
     matlabbatch{1}.spm.tools.cat.tools.long.subj.mov = {
-                                                        ['list{i} '/tp2.nii,1']
-                                                        ['list{i} '/tp3.nii,1']
+                                                        [list{i} '/tp2.nii,1']
+                                                        [list{i} '/tp3.nii,1']
                                                         }; % put all lesion-filled images per subject here
     matlabbatch{1}.spm.tools.cat.tools.long.opts.tpm = {'spm12/tpm/TPM.nii'}; % modify accordingly
     matlabbatch{1}.spm.tools.cat.tools.long.opts.affreg = 'mni';

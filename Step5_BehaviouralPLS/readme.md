@@ -1,1 +1,3 @@
 To control for potential influences of confounding variables, separate linear regression analyses were performed on the brain scores of each seed for the subacute timepoint and longitudinal change. For the subacute timepoint, the variable of interest was the brain score of the seed. The confounding variables were age, sex, handedness, log-transformed infarct volume, and total intracranial volume. For change, the scan interval was input as an additional confounding variable. The unstandardised residual brain scores of twelve seeds, referred to as the SCN scores, were used for further behavioural PLS analysis.
+
+Files presented here are for demonstration purpose

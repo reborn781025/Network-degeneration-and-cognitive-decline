@@ -11,4 +11,4 @@ Step3_ROI requires MarsBar toolbox. Please install MarsBar before running the sc
 Step4_SeedPLS and Step5_BehavioralPLS require an open source PLS software written in MATLAB. Please refer to https://www.rotmanbaycrest.on.ca/index.php?section=84 for downloading the toolbox.
 
 # Codes
-Codes presented here is our first release. Please refer to readme.md in individual folder for the use of codes.
+Codes presented here is our first release. Please refer to individual folder for the use of codes.

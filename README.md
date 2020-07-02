@@ -8,3 +8,6 @@ Step2_VBM requires the computational anatomy toolbox (CAT12) and SPM12. Please i
 Step3_ROI requires MarsBar toolbox. Please install MarsBar before running the scripts.
 
 Step4_SeedPLS and Step5_BehavioralPLS require an open source PLS software written in MATLAB. Please refer to https://www.rotmanbaycrest.on.ca/index.php?section=84 for downloading the toolbox.
+
+# code
+Codes presented here is our first release and all codes have been tested.
